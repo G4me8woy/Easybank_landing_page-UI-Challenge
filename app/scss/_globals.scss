@@ -1,0 +1,34 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+//flexbox
+.flex {
+    display: flex;
+    &-jc-sp {
+        justify-content: space-between;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+// .hide-for-mobile {
+//     //breakpoint for mobile 375px max
+//     @media (max-width: 2.4375em) {
+//         display: none;
+//     }
+// }

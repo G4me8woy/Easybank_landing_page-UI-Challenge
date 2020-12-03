@@ -1,0 +1,40 @@
+.header {
+    nav {
+        padding: 22px;
+    }
+    &__logo {}
+    &__menu {
+        >div {
+            height: 2px;
+            width: 26px;
+            background-color: $DarkBlue;
+            &:not(:last-child) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+    &__links {
+        @media (max-width: 2.4375em) {
+            display: none;
+        }
+        display: flex;
+        a {
+            text-decoration: none;
+            color: $GrayishBlue;
+            // transition: color 500ms ease-in-out;
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+            &:hover {
+                color: $DarkBlue;
+            }
+        }
+    }
+    &__button {
+        padding: 15px 34px;
+        border-radius: 25px;
+        background: linear-gradient(to right, $LimeGreen, $BrighCyan);
+        color: $White;
+        text-decoration: none;
+    }
+}
